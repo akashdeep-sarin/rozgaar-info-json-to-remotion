@@ -1,0 +1,41 @@
+{
+  "name": "chatgpt-to-remotion-interface",
+  "version": "1.0.0",
+  "description": "Convert JSON presentations to Remotion videos",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "remotion preview",
+    "build": "remotion render Presentation output/video.mp4",
+    "render": "node dist/cli.js",
+    "build:cli": "tsc",
+    "dev": "tsx src/cli.ts"
+  },
+  "keywords": [
+    "remotion",
+    "presentation",
+    "video",
+    "ppt"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@remotion/bundler": "^4.0.136",
+    "@remotion/cli": "^4.0.136",
+    "@remotion/renderer": "^4.0.136",
+    "commander": "^11.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remotion": "^4.0.136",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.45",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.5.6",
+    "postcss-loader": "^8.2.0",
+    "tailwindcss": "^3.4.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
