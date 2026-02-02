@@ -23,6 +23,7 @@ export const BulletsBlock: React.FC<BulletsBlockProps> = ({ items, theme }) => {
           key={index}
           style={{
             marginBottom: '0.75rem',
+            fontWeight: theme.fontWeight.bulletText
           }}
         >
           {item}

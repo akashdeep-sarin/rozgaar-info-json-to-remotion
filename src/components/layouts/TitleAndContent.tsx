@@ -19,7 +19,7 @@ export const TitleAndContent: React.FC<TitleAndContentProps> = ({ blocks, theme 
       style={{
       display: 'flex',
       flexDirection: 'column',
-      gap: '3rem',
+      gap: '2rem',
       height: '100%',
       padding: theme.spacing.slideMargin,
       }}

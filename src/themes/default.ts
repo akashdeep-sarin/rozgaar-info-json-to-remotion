@@ -12,20 +12,23 @@ export const defaultTheme: Theme = {
     border: '#E5E7EB',
   },
   fonts: {
-    heading: 'Inter, sans-serif',
+    heading: 'Zalando Sans, sans-serif',
     body: 'Inter, sans-serif',
     code: 'Fira Code, monospace',
   },
   spacing: {
-    slideMargin: '4rem',
-    blockGap: '1.5rem',
+    slideMargin: '6rem 6rem',
+    blockGap: '1rem',
     headingMargin: '2rem',
   },
   fontSize: {
-    title: '3.5rem',
+    title: '5rem',
     subtitle: '2rem',
-    heading: '2.5rem',
-    body: '1.25rem',
+    heading: '3.5rem',
+    body: '2.5rem',
     small: '1rem',
+  },
+  fontWeight: {
+    bulletText: 500
   },
 };

@@ -57,6 +57,7 @@ export const PresentationSchema = z.object({
   frontPage: FrontPageSchema.nullable().describe("Optional front page metadata for the presentation."),
   slides: z.array(SlideSchema).min(1).describe("Ordered array of slides comprising the presentation (at least one)."),
   createdAt: z.string().nullable().describe("Timestamp when the presentation was created."),
+  logo: z.string().nullable().describe("Timestamp when the presentation was created.")
   // metadata: z.record(z.any()).optional(),
 });
 

@@ -18,7 +18,7 @@ export const TwoColumnLayout: React.FC<TwoColumnLayoutProps> = ({ blocks, theme 
     <div
       style={{
         display: 'flex',
-        gap: '3rem',
+        gap: '2rem',
         height: '100%',
         padding: theme.spacing.slideMargin,
       }}

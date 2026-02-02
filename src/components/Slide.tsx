@@ -1,5 +1,5 @@
 import React from 'react';
-import { AbsoluteFill, Audio } from 'remotion';
+import { AbsoluteFill, Audio, Img, staticFile } from 'remotion';
 import { Theme } from '../themes';
 import { Slide as SlideType } from '../zod-presentation-schema';
 import { TitleSlideLayout, TwoColumnLayout, TitleAndContent, DefaultLayout } from './layouts';
@@ -8,9 +8,10 @@ interface SlideProps {
   slide: SlideType;
   theme: Theme;
   audioUrl?: string;
+  logo: string;
 }
 
-export const Slide: React.FC<SlideProps> = ({ slide, theme, audioUrl }) => {
+export const Slide: React.FC<SlideProps> = ({ slide, theme, logo, audioUrl }) => {
   const getLayoutComponent = () => {
     const layout = slide.layout?.toLowerCase();
     
@@ -35,6 +36,22 @@ export const Slide: React.FC<SlideProps> = ({ slide, theme, audioUrl }) => {
         color: theme.colors.text,
       }}
     >
+      {logo && (
+        <Img
+          src={staticFile(logo.startsWith('/') ? logo.slice(1) : logo)}
+          alt="Logo"
+          style={{
+            position: "absolute",
+            bottom:"40px",
+            right:"100px",
+            maxWidth: '280px',
+            maxHeight: '280px',
+            marginBottom: '3rem',
+          }}
+        />
+      )}
+
+
       {/* Audio narration */}
       {audioUrl && <Audio src={audioUrl} />}
 
@@ -46,13 +63,15 @@ export const Slide: React.FC<SlideProps> = ({ slide, theme, audioUrl }) => {
             top: 0,
             left: 0,
             right: 0,
-            padding: '2rem 4rem',
+            padding: '2rem 4rem 1.25rem',
             backgroundColor: theme.colors.primary,
             color: '#FFFFFF',
           }}
         >
           <h2
             style={{
+              display:'flex',
+              justifyContent: 'center',
               fontSize: theme.fontSize.heading,
               fontWeight: '600',
               fontFamily: theme.fonts.heading,

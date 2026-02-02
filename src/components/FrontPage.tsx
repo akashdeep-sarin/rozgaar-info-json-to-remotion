@@ -28,10 +28,10 @@ export const FrontPage: React.FC<FrontPageProps> = ({ title, author, date, logo,
           alt="Logo"
           style={{
             position: "absolute",
-            top:"100px",
+            top:"80px",
             right:"100px",
-            maxWidth: '200px',
-            maxHeight: '200px',
+            maxWidth: '280px',
+            maxHeight: '280px',
             marginBottom: '3rem',
           }}
         />

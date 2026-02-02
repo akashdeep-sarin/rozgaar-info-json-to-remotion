@@ -17,10 +17,11 @@ export const Presentation: React.FC<PresentationProps> = ({
   language = 'en',
   audioMetadata = [],
 }) => {
-  const theme = getTheme(presentationData.theme);
-
+  // const theme = getTheme(presentationData.theme);
+  const theme = getTheme(null); // KEEP IT NULL FOR NOW
   // Default front page duration: 2 seconds at 30fps = 60 frames
   const frontPageDuration = 60;
+  const { logo } = presentationData;
 
   return (
     <Series>
@@ -31,7 +32,7 @@ export const Presentation: React.FC<PresentationProps> = ({
             title={presentationData.frontPage.title}
             author={presentationData.frontPage.author}
             date={presentationData.frontPage.date}
-            logo={presentationData.frontPage.logo}
+            logo={logo}
             theme={theme}
           />
         </Series.Sequence>
@@ -45,7 +46,7 @@ export const Presentation: React.FC<PresentationProps> = ({
 
         return (
           <Series.Sequence key={slide.id || index} durationInFrames={duration}>
-            <Slide slide={slide} theme={theme} audioUrl={audioUrl} />
+            <Slide slide={slide} theme={theme} audioUrl={audioUrl} logo={logo} />
           </Series.Sequence>
         );
       })}

@@ -26,4 +26,7 @@ export interface Theme {
     body: string;
     small: string;
   };
+  fontWeight: {
+    bulletText: number;
+  }
 }
