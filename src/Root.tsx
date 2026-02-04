@@ -1,11 +1,16 @@
 import React from 'react';
 import { Composition } from 'remotion';
+import { merge } from 'lodash';
 import { Presentation } from './compositions/Presentation';
 import { Presentation as PresentationType } from './zod-presentation-schema';
 import './style.css';
 
-// Import sample data for preview
-import samplePresentation from '../input/sample-presentation.json';
+// Import JSON files
+import basePresentationData from '../input/sample-presentation.json';
+import overrideData from '../input/override.json';
+
+// Apply overrides
+const samplePresentation = merge({}, basePresentationData, overrideData) as PresentationType;
 
 interface PresentationInputProps {
   presentationData: PresentationType;
@@ -21,27 +26,48 @@ const calculateTotalDuration = (presentationData: PresentationType, audioMetadat
 };
 
 export const RemotionRoot: React.FC = () => {
-  // Mock audio metadata for preview
-  const mockAudioMetadata = (samplePresentation as PresentationType).slides.map((slide, index) => ({
-    url: `/audio/${slide.id}_en.mp3`,
-    durationInFrames: 300, // 10 seconds per slide
-  }));
-
-  const totalDuration = calculateTotalDuration(samplePresentation as PresentationType, mockAudioMetadata);
-
   return (
     <>
       <Composition
         id="Presentation"
         component={Presentation}
-        durationInFrames={totalDuration}
         fps={30}
         width={1920}
         height={1080}
         defaultProps={{
           presentationData: samplePresentation as PresentationType,
           language: 'en' as const,
-          audioMetadata: mockAudioMetadata,
+          audioMetadata: [],
+        }}
+        calculateMetadata={({ props }) => {
+          // Calculate actual duration based on audioMetadata
+          const frontPageDuration = props.presentationData.frontPage ? 60 : 0;
+          
+          // Buffer: 0.5 seconds before and after each slide (15 frames each at 30fps)
+          const bufferBeforeSlide = 15; // 0.5 seconds
+          const bufferAfterSlide = 15;  // 0.5 seconds
+          const totalBufferPerSlide = bufferBeforeSlide + bufferAfterSlide;
+          
+          let totalAudioDuration = 0;
+          if (props.audioMetadata && props.audioMetadata.length > 0) {
+            // Use actual audio durations + buffer for each slide
+            totalAudioDuration = props.audioMetadata.reduce(
+              (sum, audio) => sum + (audio?.durationInFrames || 300) + totalBufferPerSlide,
+              0
+            );
+          } else {
+            // Fallback to default 10 seconds per slide + buffer
+            totalAudioDuration = props.presentationData.slides.length * (300 + totalBufferPerSlide);
+          }
+
+          const totalDuration = frontPageDuration + totalAudioDuration;
+
+          return {
+            durationInFrames: totalDuration,
+            fps: 30,
+            width: 1920,
+            height: 1080,
+          };
         }}
       />
     </>

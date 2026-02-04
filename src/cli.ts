@@ -45,7 +45,13 @@ program
       if (options.audio !== false) {
         console.log('\n🎵 Fetching audio metadata...');
         const slideIds = presentationData.slides.map(s => s.id || '').filter(Boolean);
-        audioMetadata = await fetchAudioForSlides(slideIds, options.language as 'en' | 'hi');
+        const narrationMetadata = {language: null,  narration: [] };
+        narrationMetadata.narration = presentationData.slides.map(s => ({
+          audioNarrationInEnglish: s.audioNarrationInEnglish,
+          audioNarrationInHindi: s.audioNarrationInHindi
+        }));
+        narrationMetadata.language = options.language;
+        audioMetadata = await fetchAudioForSlides(slideIds, narrationMetadata);
         console.log(`✅ Audio metadata fetched for ${audioMetadata.length} slides`);
       } else {
         console.log('\n🔇 Audio disabled - rendering silent video');

@@ -1,5 +1,5 @@
 import React from 'react';
-import { AbsoluteFill, Audio, Img, staticFile } from 'remotion';
+import { AbsoluteFill, Html5Audio, Img, staticFile } from 'remotion';
 import { Theme } from '../themes';
 import { Slide as SlideType } from '../zod-presentation-schema';
 import { TitleSlideLayout, TwoColumnLayout, TitleAndContent, DefaultLayout } from './layouts';
@@ -12,6 +12,7 @@ interface SlideProps {
 }
 
 export const Slide: React.FC<SlideProps> = ({ slide, theme, logo, audioUrl }) => {
+
   const getLayoutComponent = () => {
     const layout = slide.layout?.toLowerCase();
     
@@ -50,10 +51,6 @@ export const Slide: React.FC<SlideProps> = ({ slide, theme, logo, audioUrl }) =>
           }}
         />
       )}
-
-
-      {/* Audio narration */}
-      {audioUrl && <Audio src={audioUrl} />}
 
       {/* Slide title (if present and not in title-slide layout) */}
       {slide.title && slide.layout !== 'title-slide' && (

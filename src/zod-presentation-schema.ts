@@ -33,8 +33,8 @@ export const SlideBlock = z.union([
 ]);
 
 export const SlideSchema = z.object({
-  id: z.string().nullable().describe("Optional unique identifier for the slide."),
-  layout: z.string().nullable().describe("Layout template for the slide (e.g., 'title-slide', 'two-column')."),
+  id: z.number().describe("Serial number for a slide. (example: 1, 2, 3...)"),
+  layout: z.string().nullable().describe("Layout template for the slide (example: 'title-slide', 'two-column')."),
   title: z.string().nullable().describe("Optional slide title shown in the header area."),
   blocks: z.array(SlideBlock).default([]).describe("Array of content blocks that make up the slide body."),
   audioNarrationInEnglish: z.string().nullable().describe("Optional English audio narration text for the slide."),
@@ -46,7 +46,6 @@ export const FrontPageSchema = z.object({
   // subtitle: z.string().nullable(),
   author: z.string().nullable().describe("Author or presenter name for the front page."),
   date: z.string().nullable().describe("Optional date string to show on the front page."),
-  logo: z.string().nullable().describe("URL or local path to a logo image for the front page."),
 });
 
 export const PresentationSchema = z.object({

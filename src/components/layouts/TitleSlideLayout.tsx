@@ -22,7 +22,7 @@ export const TitleSlideLayout: React.FC<TitleSlideLayoutProps> = ({ blocks, them
       }}
     >
       {blocks.map((block, index) => (
-        <div key={index} style={{ marginBottom: theme.spacing.blockGap, maxWidth: '80%' }}>
+        <div key={index} style={{ marginBottom: theme.spacing.blockGap }}>
           <BlockRenderer block={block} theme={theme} />
         </div>
       ))}

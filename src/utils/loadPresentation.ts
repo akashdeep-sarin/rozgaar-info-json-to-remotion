@@ -1,5 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import { merge } from 'lodash';
 import { PresentationSchema, Presentation } from '../zod-presentation-schema';
 
 /**
@@ -15,7 +16,21 @@ export function loadPresentation(filePath: string): Presentation {
     const fileContent = fs.readFileSync(absolutePath, 'utf-8');
     
     // Parse JSON
-    const jsonData = JSON.parse(fileContent);
+    let jsonData = JSON.parse(fileContent);
+    
+    // Check for override.json in the same directory
+    const dirName = path.dirname(absolutePath);
+    const overridePath = path.join(dirName, 'override.json');
+    
+    if (fs.existsSync(overridePath)) {
+      const overrideContent = fs.readFileSync(overridePath, 'utf-8');
+      const overrideData = JSON.parse(overrideContent);
+      
+      // Deep merge: override.json takes precedence
+      jsonData = merge({}, jsonData, overrideData);
+      
+      console.log('✓ Applied overrides from override.json');
+    }
     
     // Validate against Zod schema
     const validatedData = PresentationSchema.parse(jsonData);

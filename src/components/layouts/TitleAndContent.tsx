@@ -27,7 +27,7 @@ export const TitleAndContent: React.FC<TitleAndContentProps> = ({ blocks, theme 
       {blocks
       .sort((a, b) => (a.type === 'text' ? -1 : b.type === 'text' ? 1 : 0))
       .map((block, index) => (
-        <div key={index} style={{ marginBottom: theme.spacing.blockGap, maxWidth: '80%' }}>
+        <div key={index} style={{ marginBottom: theme.spacing.blockGap }}>
         <BlockRenderer block={block} theme={theme} />
         </div>
       ))}
