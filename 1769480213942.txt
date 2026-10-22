@@ -1,0 +1,274 @@
+{
+  "id": "gov-bank-jobs-001",
+  "title": "Guide to Government Bank Jobs in India",
+  "description": "An introductory guide covering types of government bank jobs in India, eligibility, recruitment process, preparation tips, salary & career growth.",
+  "theme": "gov-blue",
+  "frontPage": {
+    "title": "Guide to Government Bank Jobs in India",
+    "author": "Career Services",
+    "date": "27 Jan 2026",
+    "logo": null
+  },
+  "slides": [
+    {
+      "id": "slide-01-welcome",
+      "layout": "title-slide",
+      "title": "Welcome",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Welcome to the guide on Government Bank Jobs in India. This presentation covers job types, eligibility, recruitment stages, preparation strategies, salary and career growth.",
+          "style": "title"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Who this is for: students, graduates, job changers and career planners",
+            "What you'll learn: application steps, exam patterns, tips and resources",
+            "Duration: ~15 slides with actionable checklist"
+          ]
+        }
+      ],
+      "audioNarrationInEnglish": "Welcome. This presentation will give you a concise and practical overview of government bank jobs in India. Over the next slides we’ll cover the major types of government banks and typical roles, eligibility criteria, recruitment stages like prelims, mains and interviews, important subjects and syllabus, effective preparation tips, the expected salary and perks, and how promotions and transfers work. By the end you’ll have a clear checklist of next steps and resources to begin your preparation. Let’s get started.",
+      "audioNarrationInHindi": "स्वागत है। यह प्रस्तुति आपको भारत में सरकारी बैंक नौकरियों का संक्षिप्त और व्यावहारिक परिचय देगी। आने वाले स्लाइड्स में हम मुख्य सरकारी बैंकों और भूमिकाओं, पात्रता मानदंड, भर्ती के चरण जैसे प्रीलिम्स, मेन्स और इंटरव्यू, महत्वपूर्ण विषय और सिलेबस, प्रभावी तैयारी के टिप्स, वेतन व लाभ और प्रोन्नति और ट्रांसफर के नियम कवर करेंगे। अंत तक आपके पास एक स्पष्ट चेकलिस्ट होगी जिससे आप अपनी तैयारी शुरू कर सकेंगे। चलिए शुरू करते हैं।"
+    },
+    {
+      "id": "slide-02-overview",
+      "layout": "two-column",
+      "title": "Overview: What are Government Bank Jobs?",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Government bank jobs are positions in public sector banks and financial institutions controlled or owned by the government. They offer stable careers, standardised pay scales, and clear promotion paths.",
+          "style": "normal"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Public sector banks (e.g., SBI, PNB) and development banks (e.g., NABARD, SIDBI)",
+            "Regulatory roles in RBI and other autonomous institutions",
+            "Types: Clerks, Probationary Officers (PO), Specialist Officers (SO), Rural & Development posts"
+          ]
+        }
+      ],
+      "audioNarrationInEnglish": "Government bank jobs are roles in public sector banks and government financial institutions. These positions typically provide job security, structured salary scales, allowances, pension or pension-like benefits, and defined promotion policies. Common employers include national banks, regional rural banks, and institutions such as the Reserve Bank of India or NABARD. Job types range from clerical positions to probationary officers, specialist officers and development-focused posts. Knowing the employer type helps you pick the right exams and preparation strategy.",
+      "audioNarrationInHindi": "सरकारी बैंक नौकरियाँ सार्वजनिक क्षेत्र के बैंकों और सरकारी वित्तीय संस्थाओं में होती हैं। ये पद आमतौर पर नौकरी की सुरक्षा, संरचित वेतनमान, भत्ते, पेंशन या पेंशन जैसे लाभ और स्पष्ट प्रोन्नति नीतियाँ प्रदान करते हैं। सामान्य नियोक्ता राष्ट्रीय बैंक, क्षेत्रीय ग्रामीण बैंक और संस्थाएँ जैसे रिज़र्व बैंक ऑफ इंडिया या NABARD हैं। पदों में क्लर्क, प्रॉबेशनरी ऑफिसर, स्पेशलिस्ट ऑफिसर और विकास संबंधी पद शामिल हैं। नियोक्ता के प्रकार को जानना सही परीक्षा और तैयारी रणनीति चुनने में मदद करता है।"
+    },
+    {
+      "id": "slide-03-types-and-roles",
+      "layout": "two-column",
+      "title": "Major Banks and Typical Roles",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "State Bank of India (SBI) — Clerk, PO, Specialist Officers",
+            "Public Sector Banks (PNB, BoB, Canara) — Clerk, PO, SO roles",
+            "Reserve Bank of India (RBI) — Officer Grade, Specialist roles, regulatory posts",
+            "NABARD, SIDBI — Development officer, Rural development roles",
+            "Regional Rural Banks — Office assistant, manager roles",
+            "Specialist Officers — IT, HR, Law, Marketing, Risk, Forex"
+          ]
+        }
+      ],
+      "audioNarrationInEnglish": "Government banks include major national banks like the State Bank of India and other public sector banks, regulatory institutions such as the Reserve Bank of India, and development banks like NABARD and SIDBI. Typical roles vary by institution. Large commercial banks recruit clerks and probationary officers who handle branch operations, credit, and customer relationships. Specialist officers fill technical or domain roles such as IT, risk management, HR or legal. Development banks focus on rural lending, agricultural credit and project appraisal. Match the role to your background and career goals when choosing exams to attempt.",
+      "audioNarrationInHindi": "सरकारी बैंकों में प्रमुख राष्ट्रीय बैंक जैसे SBI और अन्य सार्वजनिक क्षेत्र के बैंक, रेगुलेटरी संस्थाएँ जैसे RBI और विकास बैंक जैसे NABARD और SIDBI शामिल हैं। भूमिकाएँ संस्था के अनुसार भिन्न होती हैं। बड़े वाणिज्यिक बैंक क्लर्क और प्रॉबेशनरी ऑफिसर नियुक्त करते हैं जो शाखा संचालन, क्रेडिट और ग्राहक सेवा संभालते हैं। स्पेशलिस्ट ऑफिसर तकनीकी या क्षेत्रीय भूमिकाएँ जैसे IT, रिस्क मैनेजमेंट, HR या लीगल निभाते हैं। विकास बैंक ग्रामीण ऋण, कृषि क्रेडिट और परियोजना मूल्यांकन पर केंद्रित होते हैं। परीक्षा चुनते समय अपनी पृष्ठभूमि और करियर लक्ष्यों के अनुसार भूमिका मिलाएं।"
+    },
+    {
+      "id": "slide-04-eligibility",
+      "layout": "two-column",
+      "title": "Eligibility & Qualifications",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Nationality: Indian citizen (some posts allow subjects of Nepal/Bhutan)",
+            "Education: Minimum graduate (10+2+3) for PO; 12th pass for many clerical posts; specific degrees for SO roles",
+            "Age limits: Typically 20–30 for PO; varies by post with age relaxations for reserved categories",
+            "Experience: Some specialist/manager posts require prior work experience",
+            "Language: Local language knowledge may be required for some regional roles"
+          ]
+        }
+      ],
+      "audioNarrationInEnglish": "Eligibility varies by post. Most entry-level probationary officer positions require a bachelor’s degree, while clerical jobs may require 12th pass. Specialist officer posts often need a relevant degree and sometimes prior experience. Age limits differ by bank and post — for many PO exams the age range is roughly 20 to 30 years with relaxations for SC/ST/OBC/PwD candidates. Nationality or domicile rules apply for some institutions. Also check local language requirements for certain regional roles. Always read the official notification for exact criteria before applying.",
+      "audioNarrationInHindi": "पात्रता पद के अनुसार बदलती है। अधिकांश एंट्री-लेवल प्रॉबेशनरी ऑफिसर पदों के लिए स्नातक आवश्यक होता है, जबकि क्लर्क नौकरियों के लिए 12वीं उत्तीर्ण पात्र हो सकती है। स्पेशलिस्ट ऑफिसर पदों के लिए संबंधित डिग्री और कभी-कभी पूर्व अनुभव आवश्यक होता है। आयु सीमा बैंक और पद के अनुसार अलग होती है — कई PO परीक्षाओं में आयु 20 से 30 वर्ष के आसपास होती है, और आरक्षण श्रेणियों के लिए छूट मिलती है। कुछ संस्थानों के लिए राष्ट्रीयता/डोमिसाइल नियम लागू होते हैं। क्षेत्रीय पदों के लिए स्थानीय भाषा की आवश्यकता भी हो सकती है। आवेदन से पहले आधिकारिक अधिसूचना अवश्य पढ़ें।"
+    },
+    {
+      "id": "slide-05-recruitment-process",
+      "layout": "two-column",
+      "title": "Recruitment Process & Exam Pattern",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Common stages: Online application → Prelims (objective) → Mains (objective + descriptive) → Interview/Group Discussion → Document verification",
+            "Prelims: Short, qualifying; tests English, Quant, Reasoning",
+            "Mains: More in-depth including GA/Finance and sometimes descriptive English",
+            "Specialist posts: may include professional knowledge tests and interviews",
+            "Shortlisting: merit list based on combined scores and reservation rules"
+          ]
+        }
+      ],
+      "audioNarrationInEnglish": "Most bank recruitments follow multi-stage selection. Start by submitting an online application and paying the fee. Prelims or preliminary tests are usually objective and serve as a qualifier; they focus on reasoning, quantitative aptitude and English. Candidates who clear prelims move to mains, which is more comprehensive and may include descriptive writing, computer knowledge and general awareness. Specialist roles include domain-specific tests. Final selection sometimes involves interview or an additional assessment. Results are based on merit lists after applying reservation and normalization rules; always follow the official timeline.",
+      "audioNarrationInHindi": "कई बैंक भर्ती बहु-चरणीय चयन प्रक्रिया का पालन करती हैं। पहले ऑनलाइन आवेदन और फीस जमा करें। प्रीलिम्स सामान्यतः वस्तुनिष्ठ होते हैं और क्वालिफायर का काम करते हैं; ये रीजनिंग, क्वांटिटेटिव एबिलिटी और इंग्लिश पर केंद्रित होते हैं। प्रीलिम्स उत्तीर्ण करने वालों को मेन्स में बुलाया जाता है, जो अधिक विस्तृत होता है और कभी-कभी डिस्क्रिप्टिव राइटिंग, कंप्यूटर ज्ञान और जनरल अवेयरनेस शामिल करता है। स्पेशलिस्ट पदों पर डोमेन-विशेष टेस्ट होते हैं। अंतिम चयन अक्सर इंटरव्यू या अतिरिक्त आकलन के बाद मेरिट सूची के आधार पर होता है। आधिकारिक समय-सीमा पर ध्यान दें।"
+    },
+    {
+      "id": "slide-06-preparation-tips",
+      "layout": "two-column",
+      "title": "Preparation Tips & Resources",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Create a realistic study plan with daily and weekly goals",
+            "Focus on fundamentals first: basics of arithmetic, reasoning concepts and grammar",
+            "Use standard books and online resources; follow a current affairs routine (daily/weekly)",
+            "Take timed mock tests and analyze weaknesses; simulate exam conditions",
+            "Join test series or coaching if you need structure; leverage free video lectures and apps",
+            "Maintain health and manage stress with breaks and sleep"
+          ]
+        }
+      ],
+      "audioNarrationInEnglish": "Start with a clear, realistic study schedule that divides syllabus topics into daily and weekly targets. Build strong fundamentals—basic arithmetic techniques, reasoning principles and grammar for English. Complement books with online resources and daily current affairs practice for GA. Regular timed mocks are essential; analyze errors and work on weak areas. If you prefer guided learning, consider a reputable test series or coaching, but many candidates succeed with disciplined self-study and quality mock practice. Finally, manage time, maintain good health, and ensure consistent practice rather than last-minute cramming.",
+      "audioNarrationInHindi": "एक स्पष्ट और वास्तविक अध्ययन समय-सारिणी बनाएं जो सिलेबस को दैनिक और साप्ताहिक लक्ष्यों में बांटे। मूलभूत बातों पर ध्यान दें — अंकगणित की तकनीकें, रीजनिंग सिद्धांत और अंग्रेज़ी व्याकरण। पुस्तकों के साथ ऑनलाइन संसाधनों और दैनिक करंट अफेयर्स अभ्यास का उपयोग करें। नियमित टाइम किए गए मॉक टेस्ट आवश्यक हैं; त्रुटियों का विश्लेषण करें और कमजोर क्षेत्रों पर काम करें। यदि आप मार्गदर्शन पसंद करते हैं तो विश्वसनीय टेस्ट सीरीज़ या कोचिंग लें, पर अनुशासित स्व-अध्ययन और गुणवत्ता वाले मॉक अभ्यास से भी सफलता मिलती है। समय का प्रबंधन करें, स्वास्थ्य बनाए रखें और लगातार अभ्यास रखें।"
+    },
+    {
+      "id": "slide-07-syllabus",
+      "layout": "two-column",
+      "title": "Syllabus & Important Subjects",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Quantitative Aptitude: Arithmetic, Data Interpretation, Algebra, Number Systems",
+            "Reasoning Ability: Logical reasoning, puzzles, seating, syllogism",
+            "English Language: Reading comprehension, grammar, para jumbles, vocabulary",
+            "General Awareness / Banking Awareness: Current affairs, economy, banking terms",
+            "Computer Knowledge: Basics of MS Office, internet, banking software concepts",
+            "Professional Knowledge: For SO — finance/accounting/IT/legal as per post"
+          ]
+        }
+      ],
+      "audioNarrationInEnglish": "Core subjects across bank exams often include Quantitative Aptitude, Reasoning, English Language, General Awareness with emphasis on banking and the economy, and basic Computer Knowledge. For specialist officer positions, professional subjects like finance, accounting, IT or law are tested in depth. Understand the exam-specific syllabus from official notifications and break topics down into manageable subtopics. Prioritize high-weight areas like data interpretation and reasoning, and invest regular time in current affairs and banking awareness throughout your preparation.",
+      "audioNarrationInHindi": "बैंक परीक्षाओं में सामान्यतः क्वांटिटेटिव एबिलिटी, रीजनिंग, इंग्लिश, बैंकिंग/जनरल अवेयरनेस और बेसिक कंप्यूटर नॉलेज शामिल होते हैं। स्पेशलिस्ट ऑफिसर पदों के लिए पेशेवर विषय जैसे फाइनेंस, अकाउंटिंग, IT या लीगल गहराई से पूछे जाते हैं। आधिकारिक अधिसूचना से सिलेबस समझें और विषयों को छोटे हिस्सों में बाँटें। डेटा इंटर्प्रिटेशन और रीजनिंग जैसे उच्च-वेट वाले क्षेत्रों को प्राथमिकता दें और तैयारी के दौरान नियमित रूप से करंट अफेयर्स व बैंकिंग अवेयरनेस पर समय दें।"
+    },
+    {
+      "id": "slide-08-application-timeline",
+      "layout": "two-column",
+      "title": "Application Process & Timeline",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Monitor official bank and employment portals for notifications (SBI, IBPS, RBI, NABARD websites)",
+            "Typical timeline: Notification → Apply online → Admit card (prelims) → Prelims → Mains → Interview → Final list",
+            "Application essentials: scanned photo, signature, ID proof, educational certificates",
+            "Fees: Vary by category; keep payment method ready",
+            "Keep copies of application and confirmation for records"
+          ]
+        }
+      ],
+      "audioNarrationInEnglish": "Track official recruitment portals such as IBPS, SBI, RBI or NABARD for announcements and timelines. The typical flow is notification, online application, admit card issuance for prelims, prelims, mains, interviews if applicable, and final result. Prepare scanned documents in the correct format—passport-size photo, signature, ID and certificates—before applying to avoid last-minute issues. Note application fees and payment modes, and retain confirmation receipts and application PDFs for future reference and document verification stages.",
+      "audioNarrationInHindi": "IBPS, SBI, RBI, NABARD जैसी आधिकारिक भर्ती पोर्टलों पर घोषणाएँ और समय-सीमा देखें। सामान्य प्रवाह होता है: अधिसूचना, ऑनलाइन आवेदन, प्रीलिम्स के लिए एडमिट कार्ड, प्रीलिम्स, मेन्स, यदि आवश्यक हो तो इंटरव्यू और अंतिम परिणाम। आवेदन से पहले पासपोर्ट साइज फोटो, हस्ताक्षर, ID और प्रमाण-पत्र सही फॉर्मेट में तैयार रखें ताकि अंतिम समय में समस्या न हो। आवेदन शुल्क और भुगतान मोड नोट करें और भविष्य के संदर्भ और दस्तावेज सत्यापन के लिए कन्फर्मेशन रसीदें और आवेदन पीडीएफ सुरक्षित रखें।"
+    },
+    {
+      "id": "slide-09-salary-benefits",
+      "layout": "two-column",
+      "title": "Salary, Benefits & Job Profile",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Entry-level gross pay varies by bank; POs typically have attractive starting pay plus allowances",
+            "Allowances: HRA, DA, transport/conveyance, special allowances vary by posting",
+            "Perks: Medical benefits, loan concessions, festival advances, PF/pension benefits for some banks",
+            "Work profile: customer service, account operations, credit appraisal, branch management, product sales",
+            "Stability and social status are significant non-monetary benefits"
+          ]
+        }
+      ],
+      "audioNarrationInEnglish": "Bank positions generally come with structured pay scales and several allowances such as house rent allowance, dearness allowance, transport and other special allowances depending on posting. Probationary officers usually start with a higher pay scale and a varied job profile covering branch operations, credit appraisal and customer relationship roles. Many banks provide medical cover, staff loans, provident fund or pension benefits and other perks. Beyond pay, government bank jobs are valued for stability, predictable benefits and social standing. Specific salary slabs differ across banks and are detailed in their service rules.",
+      "audioNarrationInHindi": "बैंक पदों के साथ संरचित वेतनमान और कई भत्ते होते हैं जैसे हाउस रेंट अलाउंस, डियरनेस अलाउंस, परिवहन और पोस्टिंग के अनुसार विशेष भत्ते। प्रॉबेशनरी ऑफिसर्स आमतौर पर ऊँचे प्रारंभिक वेतन स्केल पर होते हैं और शाखा संचालन, क्रेडिट मूल्यांकन और ग्राहक संबंध जैसे कार्य करते हैं। कई बैंकों में मेडिकल कवर, स्टाफ लोन, प्रोविडेंट फंड या पेंशन लाभ और अन्य सुविधाएँ मिलती हैं। वेतन के अलावा सरकारी बैंक नौकरियाँ स्थिरता, पूर्वानुमेय लाभ और सामाजिक मान्यता के लिए जानी जाती हैं। विशिष्ट वेतन स्लैब बैंक के अनुसार बदलते हैं।"
+    },
+    {
+      "id": "slide-10-career-growth",
+      "layout": "two-column",
+      "title": "Career Growth & Transfers",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Promotions through probation, departmental exams, and seniority-based increments",
+            "Opportunities to move into specialist departments or central postings",
+            "Study leaves, training programs and certifications are often supported",
+            "Transfers: postings can change by state/region; check transfer policy for desired flexibility",
+            "Long-term stability with defined retirement benefits in many banks"
+          ]
+        }
+      ],
+      "audioNarrationInEnglish": "Government bank jobs typically offer structured career progression — employees move up through probation, departmental exams, performance reviews and seniority. Many banks support continued learning with training programs and study leave. Specialist career paths allow transitions into risk, IT, treasury or credit departments. Transfers are common; banks follow transfer policies and cadres which determine posting flexibility. Over the long term, employees gain stability, predictable increments and retirement benefits. Research the career path of a specific bank to align it with your goals.",
+      "audioNarrationInHindi": "सरकारी बैंक नौकरियों में सामान्यतः संरचित करियर प्रगति होती है — कर्मचारी प्रॉबेशन, विभागीय परीक्षाओं, प्रदर्शन समीक्षा और वरिष्ठता के माध्यम से उन्नत होते हैं। कई बैंक प्रशिक्षण कार्यक्रम और अध्ययन अवकाश देकर निरंतर सीखने का समर्थन करते हैं। स्पेशलिस्ट रास्ते रिस्क, IT, ट्रेजरी या क्रेडिट विभागों में बदलाव की अनुमति देते हैं। ट्रांसफर सामान्य हैं; बैंक ट्रांसफर नीतियों और कैडर के अनुसार पोस्टिंग करते हैं। दीर्घकालिक रूप से कर्मचारी स्थिरता, पूर्वानुमेय वृद्धि और सेवानिवृति लाभ प्राप्त करते हैं। किसी विशिष्ट बैंक के करियर पथ को समझें और अपनी योजनाओं के अनुसार चुनें।"
+    },
+    {
+      "id": "slide-11-faqs-dos",
+      "layout": "two-column",
+      "title": "Common FAQs — Do's & Don'ts",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Do: Read official notification thoroughly before applying",
+            "Do: Start early with fundamentals and mocks; be consistent",
+            "Don't: Rely solely on tips — practice full-length mocks under timed conditions",
+            "Do: Keep documents scanned and backed up in the required formats",
+            "Don't: Ignore physical/medical requirements or local language tests"
+          ]
+        }
+      ],
+      "audioNarrationInEnglish": "Here are quick do’s and don’ts: Do read the official notification fully and note exact eligibility and dates. Start your preparation early and emphasize fundamentals with gradual practice tests. Use full-length timed mocks and analyze results — never skip error analysis. Keep all required documents scanned and backed up in specified formats. Don’t ignore local language requirements or medical standards if applicable. Stay consistent, avoid last-minute shortcuts, and seek guidance when you’re stuck. These simple practices raise your chances significantly.",
+      "audioNarrationInHindi": "यहाँ कुछ त्वरित निर्देश हैं: आधिकारिक अधिसूचना ध्यान से पढ़ें और पात्रता व तिथियाँ नोट करें। तैयारी जल्दी शुरू करें और मूल बातों पर जोर देकर क्रमिक अभ्यास टेस्ट करें। पूर्ण लंबाई के टाइम किए मॉक लें और परिणामों का विश्लेषण करें — एरर एनालिसिस जरूरी है। आवश्यक दस्तावेज निर्दिष्ट फॉर्मेट में स्कैन करके बैकअप रखें। यदि लागू हो तो स्थानीय भाषा आवश्यकताओं या मेडिकल मानकों की अनदेखी न करें। लगातार बने रहें, आखिरी मिनट के शॉर्टकट से बचें और जरूरत पड़ने पर मार्गदर्शन लें। ये आदतें सफलता की संभावना बढ़ाती हैं।"
+    },
+    {
+      "id": "slide-12-checklist-next-steps",
+      "layout": "two-column",
+      "title": "Next Steps — Actionable Checklist",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Subscribe to official notifications: IBPS, SBI, RBI, NABARD and state bank alerts",
+            "Prepare required documents (photo, ID, educational certificates) in advance",
+            "Make a weekly study plan with mocks scheduled every 1–2 weeks",
+            "Join a test series or use a recommended app for topic-wise practice",
+            "Revise current affairs daily and maintain short notes for last-minute revision",
+            "Apply on time and keep multiple backups of application confirmation"
+          ]
+        }
+      ],
+      "audioNarrationInEnglish": "Here’s a short checklist to act on today: Subscribe to official recruitment portals and notification alerts. Prepare digital copies of your photo, signature, ID and education certificates now so you’re ready when the window opens. Build a weekly study plan and schedule regular mock tests to track progress. Use a test series or a high-quality app for structured practice. Maintain concise current affairs notes for quick revision and follow the official timeline to apply on time. With these steps, you’ll be organised and exam-ready.",
+      "audioNarrationInHindi": "आज ही पालन करने के लिए एक छोटी चेकलिस्ट: आधिकारिक भर्ती पोर्टलों और अधिसूचना अलर्ट को सब्सक्राइब करें। फोटो, सिग्नेचर, ID और शैक्षिक प्रमाण-पत्रों की डिजिटल कॉपी अभी तैयार रखें ताकि आवेदन खुलते ही आप तैयार हों। साप्ताहिक अध्ययन योजना बनाएं और प्रगति के लिए नियमित मॉक टेस्ट शेड्यूल करें। संरचित अभ्यास के लिए टेस्ट सीरीज़ या उच्च-गुणवत्ता वाले ऐप का उपयोग करें। त्वरित संशोधन के लिए संक्षिप्त करंट अफेयर्स नोट रखें और समय रहते आधिकारिक तारीखों पर आवेदन करें। इन कदमों से आप व्यवस्थित और परीक्षा-तैयार रहेंगे।"
+    },
+    {
+      "id": "slide-13-thank-you",
+      "layout": "title-slide",
+      "title": "Thank You",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Thank you for viewing this guide. Wishing you success in your bank exam preparation. For further help, visit official bank portals or professional career guidance services.",
+          "style": "subtitle"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Helpful links: IBPS, SBI, RBI, NABARD official websites",
+            "Keep practicing and stay updated with daily current affairs"
+          ]
+        }
+      ],
+      "audioNarrationInEnglish": "Thank you for going through this guide to government bank jobs. I hope the information helps you plan and prepare effectively. For the latest notifications, always check official bank websites and employment portals. If you need more detailed help with a study plan, mock series or application checklists, consider reaching out to career guidance services or trusted coaching platforms. Best of luck with your preparation — stay consistent and focused.",
+      "audioNarrationInHindi": "सरकारी बैंक नौकरियों के इस मार्गदर्शक को पढ़ने के लिए धन्यवाद। उम्मीद है यह जानकारी आपकी योजना बनाने और प्रभावी तैयारी में मदद करेगी। नवीनतम अधिसूचनाओं के लिए हमेशा आधिकारिक बैंक वेबसाइट और रोजगार पोर्टल देखें। यदि आप विस्तृत अध्ययन योजना, मॉक सीरीज़ या आवेदन चेकलिस्ट में मदद चाहते हैं तो करियर मार्गदर्शन सेवाओं या विश्वसनीय कोचिंग प्लेटफ़ॉर्म से संपर्क करें। आपकी तैयारी के लिए शुभकामनाएँ — नियमित और केंद्रित रहें।"
+    }
+  ],
+  "createdAt": "2026-01-27T10:00:00Z"
+}

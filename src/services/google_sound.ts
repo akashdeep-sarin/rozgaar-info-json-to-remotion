@@ -27,11 +27,16 @@ const main = async (text: string, filePath: string): Promise<string> => {
       return outPath;
     }
 
+    const isSsml = /^\s*<speak[\s>]/i.test(text);
+    if (isSsml) {
+      console.log('Input detected as SSML');
+    }
+
     const request: protos.google.cloud.texttospeech.v1.ISynthesizeSpeechRequest = {
-      input: { text },
+      input: isSsml ? { ssml: text } : { text },
       voice: {
         languageCode: 'hi-IN',
-        name: 'hi-IN-Chirp3-HD-Achernar',
+        name: 'hi-IN-Chirp3-HD-Sulafat',
       },
       audioConfig: {
         audioEncoding: 'MP3',

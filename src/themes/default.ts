@@ -13,7 +13,7 @@ export const defaultTheme: Theme = {
   },
   fonts: {
     heading: 'Zalando Sans, sans-serif',
-    body: 'Inter, sans-serif',
+    body: 'Zalando Sans, sans-serif',
     code: 'Fira Code, monospace',
   },
   spacing: {
@@ -24,7 +24,7 @@ export const defaultTheme: Theme = {
   fontSize: {
     title: '5rem',
     subtitle: '2rem',
-    heading: '3.5rem',
+    heading: '5rem',
     body: '2.5rem',
     small: '1rem',
   },

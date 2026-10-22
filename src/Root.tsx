@@ -18,30 +18,25 @@ interface PresentationInputProps {
   audioMetadata?: Array<{ url: string; durationInFrames: number }>;
 }
 
-// Calculate total duration
-const calculateTotalDuration = (presentationData: PresentationType, audioMetadata: any[]) => {
-  const frontPageDuration = 60; // 2 seconds
-  const slidesDuration = audioMetadata.reduce((acc, meta) => acc + (meta?.durationInFrames || 300), 0);
-  return frontPageDuration + slidesDuration;
-};
-
 export const RemotionRoot: React.FC = () => {
+  const defaultPropsValue: PresentationInputProps = {
+    presentationData: samplePresentation as PresentationType,
+    language: 'en' as const,
+    audioMetadata: [],
+  };
+
   return (
     <>
       <Composition
         id="Presentation"
-        component={Presentation}
+        component={Presentation as any}
         fps={30}
         width={1920}
         height={1080}
-        defaultProps={{
-          presentationData: samplePresentation as PresentationType,
-          language: 'en' as const,
-          audioMetadata: [],
-        }}
+        defaultProps={defaultPropsValue}
         calculateMetadata={({ props }) => {
+          const typedProps = props as unknown as PresentationInputProps;
           // Calculate actual duration based on audioMetadata
-          const frontPageDuration = props.presentationData.frontPage ? 60 : 0;
           
           // Buffer: 0.5 seconds before and after each slide (15 frames each at 30fps)
           const bufferBeforeSlide = 15; // 0.5 seconds
@@ -49,18 +44,18 @@ export const RemotionRoot: React.FC = () => {
           const totalBufferPerSlide = bufferBeforeSlide + bufferAfterSlide;
           
           let totalAudioDuration = 0;
-          if (props.audioMetadata && props.audioMetadata.length > 0) {
+          if (typedProps.audioMetadata && typedProps.audioMetadata.length > 0) {
             // Use actual audio durations + buffer for each slide
-            totalAudioDuration = props.audioMetadata.reduce(
+            totalAudioDuration = typedProps.audioMetadata.reduce(
               (sum, audio) => sum + (audio?.durationInFrames || 300) + totalBufferPerSlide,
               0
             );
           } else {
             // Fallback to default 10 seconds per slide + buffer
-            totalAudioDuration = props.presentationData.slides.length * (300 + totalBufferPerSlide);
+            totalAudioDuration = typedProps.presentationData.slides.length * (300 + totalBufferPerSlide);
           }
 
-          const totalDuration = frontPageDuration + totalAudioDuration;
+          const totalDuration = totalAudioDuration;
 
           return {
             durationInFrames: totalDuration,

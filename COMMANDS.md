@@ -1,0 +1,1 @@
+$ $ npm run dev render -- -i ./input/sample-presentation.json -o ./output/my-video.mp4 -l hi

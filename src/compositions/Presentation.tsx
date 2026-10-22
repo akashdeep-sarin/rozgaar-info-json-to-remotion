@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { AbsoluteFill, Sequence, Html5Audio, staticFile } from 'remotion';
 import { Presentation as PresentationType } from '../zod-presentation-schema';
 import { getTheme } from '../themes';
-import { FrontPage } from '../components/FrontPage';
 import { Slide } from '../components/Slide';
+import { usePresentationStore } from '../store';
 
 interface PresentationProps {
   presentationData: PresentationType;
@@ -16,9 +16,15 @@ export const Presentation: React.FC<PresentationProps> = ({
   language = 'en',
   audioMetadata = [],
 }) => {
+  const setMetadata = usePresentationStore((state) => state.setMetadata);
+
+  useEffect(() => {
+    if (presentationData.metadata) {
+      setMetadata(presentationData.metadata);
+    }
+  }, [presentationData.metadata, setMetadata]);
+
   const theme = getTheme(presentationData.theme);
-  const frontPageDuration = 60; // 2 seconds at 30fps
-  const frontPageEndFrame = presentationData.frontPage ? frontPageDuration : 0;
   const { logo } = presentationData;
 
   // Buffer: 0.5 seconds (15 frames) before and after each slide
@@ -30,28 +36,15 @@ export const Presentation: React.FC<PresentationProps> = ({
   console.log(JSON.stringify(audioMetadata));
 
   return (
-    <AbsoluteFill style={{ backgroundColor: theme.background }}>
-      {/* Front Page */}
-      {presentationData.frontPage && (
-        <Sequence from={0} durationInFrames={frontPageDuration}>
-          <FrontPage
-            title={presentationData.frontPage.title}
-            author={presentationData.frontPage.author}
-            date={presentationData.frontPage.date}
-            logo={logo}
-            theme={theme}
-          />
-        </Sequence>
-      )}
-
-      {/* Slides */}
+    <AbsoluteFill style={{ backgroundColor: theme.colors.background }}>
+      {/* All Slides (including front page as first slide) */}
       {presentationData.slides.map((slide, index) => {
         const audioDuration = audioMetadata[index]?.durationInFrames || 300;
         const duration = bufferBeforeSlide + audioDuration + bufferAfterSlide;
         const audioUrl = audioMetadata[index]?.url;
         const audioSrc = audioUrl ? staticFile('audio/' + audioUrl.slice(audioUrl.lastIndexOf('\\') + 1)) : undefined;
         
-        const slideStart = frontPageEndFrame + cumulativeDuration;
+        const slideStart = cumulativeDuration;
         cumulativeDuration += duration;
         
         return (

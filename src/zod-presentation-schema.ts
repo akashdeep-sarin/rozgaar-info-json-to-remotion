@@ -34,30 +34,27 @@ export const SlideBlock = z.union([
 
 export const SlideSchema = z.object({
   id: z.number().describe("Serial number for a slide. (example: 1, 2, 3...)"),
-  layout: z.string().nullable().describe("Layout template for the slide (example: 'title-slide', 'two-column')."),
-  title: z.string().nullable().describe("Optional slide title shown in the header area."),
-  blocks: z.array(SlideBlock).default([]).describe("Array of content blocks that make up the slide body."),
-  audioNarrationInEnglish: z.string().nullable().describe("Optional English audio narration text for the slide."),
-  audioNarrationInHindi: z.string().nullable().describe("Optional Hindi audio narration text for the slide."),
-});
-
-export const FrontPageSchema = z.object({
-  title: z.string().describe("Presentation front-page title (usually the job position or company presentation title)."),
-  // subtitle: z.string().nullable(),
-  author: z.string().nullable().describe("Author or presenter name for the front page."),
-  date: z.string().nullable().describe("Optional date string to show on the front page."),
+  layout: z.string().describe("Layout template for the slide (example: 'front-page', 'title-and-content', 'last-page')."),
+  title: z.string().describe("Optional slide title shown in the header area."),
+  blocks: z.array(SlideBlock).default([]).describe("Array of content blocks that make up the slide body. (Skip this for layout: 'front-page' & 'last-page')"),
+  // audioNarrationInEnglish: z.string().nullable().describe("English audio narration text for the slide in Google SSML format"),
+  audioNarrationInHindi: z.string().nullable().describe("Hindi audio narration text for the slide in Google SSML format (30 seconds to 2 mins OR 50 to 200 words approx)."),
 });
 
 export const PresentationSchema = z.object({
   id: z.string().nullable().describe("Optional identifier for the presentation."),
   title: z.string().nullable().describe("Presentation title (appears in file metadata and viewers)."),
   description: z.string().nullable().describe("Short description or summary of the presentation content (e.g., job description summary)."),
-  theme: z.string().nullable().describe("Visual theme or color scheme name to apply to the slides."),
-  frontPage: FrontPageSchema.nullable().describe("Optional front page metadata for the presentation."),
   slides: z.array(SlideSchema).min(1).describe("Ordered array of slides comprising the presentation (at least one)."),
-  createdAt: z.string().nullable().describe("Timestamp when the presentation was created."),
-  logo: z.string().nullable().describe("Timestamp when the presentation was created.")
-  // metadata: z.record(z.any()).optional(),
+  // createdAt: z.string().nullable().describe("Timestamp when the presentation was created."),
+  // logo: z.string().nullable().describe("Optional URL or data for the presentation logo."),
+  metadata: z.object({
+    organizationName: z.string().nullable().describe("Full name of the hiring organization."),
+    organizationShortName: z.string().nullable().describe("Abbreviated name of the hiring organization."),
+    domain: z.string().nullable().describe("Domain or sector for the hiring (e.g., IT, Banking, Admin)."),
+    qualificationExpected: z.array(z.string()).nullable().describe("Expected qualifications for candidates (e.g., BTech, MBA)."),
+    totalPosts: z.number().nullable().describe("Total number of posts (if computable)."),
+  }),
 });
 
 export type Presentation = z.infer<typeof PresentationSchema>;
