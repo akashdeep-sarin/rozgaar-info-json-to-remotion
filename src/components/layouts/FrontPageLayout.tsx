@@ -1,19 +1,17 @@
 import React from 'react';
 import { Theme } from '../../themes';
 import { Img, staticFile } from 'remotion';
+import { PresentationMetadata } from '../../zod-presentation-schema';
 import StarIcon from '../elements/StarIcon';
 import Pill from '../elements/Pill';
-import { usePresentationStore } from '../../store';
 
 interface FrontPageLayoutProps {
   text: string;
   theme: Theme;
-  logo: string;
+  metadata?: PresentationMetadata;
 }
 
-export const FrontPageLayout: React.FC<FrontPageLayoutProps> = ({ text, theme, logo }) => {
-  const metadata = usePresentationStore((state) => state.metadata);
-
+export const FrontPageLayout: React.FC<FrontPageLayoutProps> = ({ text, theme, metadata }) => {
   return (
     <div
       style={{
@@ -26,21 +24,19 @@ export const FrontPageLayout: React.FC<FrontPageLayoutProps> = ({ text, theme, l
         padding: theme.spacing.slideMargin,
       }}
     >
-      {logo && (
-        <Img
-          src={staticFile('/rozgaar_info_website.png')}
-          alt="Logo"
-          style={{
-            position: 'absolute',
-            top: '100px',
-            right: '100px',
-            maxWidth: '280px',
-            maxHeight: '280px',
-            marginBottom: '3rem',
-          }}
-        />
-      )}
-      {/* show StarIcon when no logo supplied */}
+      <Img
+        src={staticFile('/rozgaar_info_website.png')}
+        alt="Logo"
+        style={{
+          position: 'absolute',
+          top: '100px',
+          right: '100px',
+          maxWidth: '280px',
+          maxHeight: '280px',
+          marginBottom: '3rem',
+        }}
+      />
+      {/* Total posts badge */}
       {metadata && metadata?.totalPosts && (
         <div style={{ position: 'absolute', top: '100px', left: '100px' }}>
           <StarIcon size={280} label={metadata.totalPosts} />

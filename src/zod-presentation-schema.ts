@@ -47,7 +47,6 @@ export const PresentationSchema = z.object({
   description: z.string().nullable().describe("Short description or summary of the presentation content (e.g., job description summary)."),
   slides: z.array(SlideSchema).min(1).describe("Ordered array of slides comprising the presentation (at least one)."),
   // createdAt: z.string().nullable().describe("Timestamp when the presentation was created."),
-  // logo: z.string().nullable().describe("Optional URL or data for the presentation logo."),
   metadata: z.object({
     organizationName: z.string().nullable().describe("Full name of the hiring organization."),
     organizationShortName: z.string().nullable().describe("Abbreviated name of the hiring organization."),
@@ -59,4 +58,5 @@ export const PresentationSchema = z.object({
 
 export type Presentation = z.infer<typeof PresentationSchema>;
 export type Slide = z.infer<typeof SlideSchema>;
+export type PresentationMetadata = Presentation['metadata'];
 export type SlideBlockType = z.infer<typeof SlideBlock>;
