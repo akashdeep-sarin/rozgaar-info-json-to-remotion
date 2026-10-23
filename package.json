@@ -4,12 +4,10 @@
   "description": "Convert JSON presentations to Remotion videos",
   "main": "src/index.ts",
   "scripts": {
-    "start": "remotion preview",
-    "server": "tsx src/server.ts",
+    "start": "remotion studio",
     "build": "remotion render Presentation output/video.mp4",
-    "render": "node dist/cli.ts",
-    "build:cli": "tsc",
     "dev": "tsx src/cli.ts",
+    "typecheck": "tsc --noEmit",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,md}\" \"*.{json,md}\"",
     "inspect": "tsx --inspect-brk src/cli.ts"
   },
@@ -27,17 +25,14 @@
     "@remotion/cli": "^4.0.136",
     "@remotion/renderer": "^4.0.136",
     "commander": "^11.1.0",
-    "express": "^4.18.2",
     "lodash": "^4.17.23",
     "music-metadata": "^11.11.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "remotion": "^4.0.136",
-    "zod": "^3.22.4",
-    "zustand": "^5.0.11"
+    "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@types/express": "^4.17.21",
     "@types/lodash": "^4.17.23",
     "@types/node": "^20.10.5",
     "@types/react": "^18.2.45",

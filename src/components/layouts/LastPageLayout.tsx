@@ -1,14 +1,15 @@
 import React from 'react';
 import { Theme } from '../../themes';
 import { Img, staticFile } from 'remotion';
+import { PresentationMetadata } from '../../zod-presentation-schema';
 
 interface LastPageLayoutProps {
   text: string;
   theme: Theme;
-  logo: string;
+  metadata?: PresentationMetadata;
 }
 
-export const LastPageLayout: React.FC<LastPageLayoutProps> = ({ text, theme, logo }) => {
+export const LastPageLayout: React.FC<LastPageLayoutProps> = ({ text, theme }) => {
   return (
     <div
       style={{
@@ -21,20 +22,18 @@ export const LastPageLayout: React.FC<LastPageLayoutProps> = ({ text, theme, log
         padding: theme.spacing.slideMargin,
       }}
     >
-      {logo && (
-        <Img
-          src={staticFile("/rozgaar_info_website.png")}
-          alt="Logo"
-          style={{
-            position: 'absolute',
-            top: '100px',
-            right: '100px',
-            maxWidth: '280px',
-            maxHeight: '280px',
-            marginBottom: '3rem',
-          }}
-        />
-      )}
+      <Img
+        src={staticFile("/rozgaar_info_website.png")}
+        alt="Logo"
+        style={{
+          position: 'absolute',
+          top: '100px',
+          right: '100px',
+          maxWidth: '280px',
+          maxHeight: '280px',
+          marginBottom: '3rem',
+        }}
+      />
       <span
         style={{
           fontWeight: 'bold',
